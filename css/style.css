@@ -48,7 +48,7 @@ a {
 .black-icons, .right-menu, .buttons,
 .main-header-nav, .logo, .right-nav,
 .jumbo-info, .title-section, .title, .title-info,
-.category-buttons {
+.category-buttons, .section, .cards {
   display: flex;
 }
 
@@ -286,4 +286,50 @@ a {
 
 .category-buttons a:hover {
   background-color: #fafafa;
+}
+
+
+/* men cards */
+.section {
+  justify-content: center;
+}
+
+.card {
+  width: 270px;
+  margin-right: 10px;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2a2f33;
+  margin: 20px 0 10px 0;
+}
+
+.caption {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b6a6b;
+  margin-bottom: 15px;
+}
+
+.old-price,
+.new-price {
+  color: #427ed5;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.old-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  margin-right: 5px;
 }
