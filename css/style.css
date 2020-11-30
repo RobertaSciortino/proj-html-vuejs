@@ -47,9 +47,13 @@ a {
 .header-top, .main-header, .header-top-nav,
 .black-icons, .right-menu, .buttons,
 .main-header-nav, .logo, .right-nav,
-.jumbo-info, .title-section, .title, .title-info,
+.jumbo-info, .title, .title-info,
 .category-buttons, .section, .cards {
   display: flex;
+}
+
+.section {
+  justify-content: center;
 }
 
 /*header top*/
@@ -67,8 +71,11 @@ a {
   border-top: 4px solid #427ed5;
 }
 
-.header-top-nav {
+.header-top, .header-top-nav {
   width: 100%;
+}
+
+.header-top-nav {
   height: 100%;
   justify-content: space-between;
   align-items: center;
@@ -232,9 +239,6 @@ a {
 }
 
 /* ----section title---- */
-.title-section {
-  justify-content: center;
-}
 
 .title {
   justify-content: center;
@@ -290,10 +294,6 @@ a {
 
 
 /* men cards */
-.section {
-  justify-content: center;
-}
-
 .card {
   width: 270px;
   margin-right: 10px;
