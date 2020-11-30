@@ -4,21 +4,49 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 header {
+  width: 100%;
   height: 15vh;
-  border-bottom: 1px solid red;
+}
+
+.container { /* gestisce solo width */
+  width: 60%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blue-button {
+  background-color: #427ed5;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.blue-button a {
+  color: #ffffff;
+}
+
+/*header top*/
+.header-top, .main-header {
+  display: flex;
+  justify-content: center;
 }
 
 .header-top {
   width: 100%;
   height: 30%;
-  display: flex;
-  justify-content: center;
-  border: 1px solid #6b6a6b;
+  border-bottom: 1px solid #D5D3D5;
 }
 
-.container { /* gestisce solo width */
-  width: 60%;
+.header-top .container {
+  border-top: 4px solid #427ed5;
 }
 
 .header-top-nav {
@@ -29,10 +57,7 @@ header {
   align-items: center;
 }
 
-.main-header {
-  height: 70%;
-}
-
+/* icons */
 .black-icons {
   width: 15%;
   height: 100%;
@@ -42,10 +67,13 @@ header {
 
 .black-icons a {
   color: #2a2f33;
-  margin-right: 10px;
+  margin-right: 20px;
+  font-size: 14px;
 }
 
-.shop-menu {
+/* right-menu */
+
+.right-menu {
   display: flex;
   justify-content: flex-end;
   width: 40%;
@@ -54,31 +82,89 @@ header {
 
 .buttons {
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-right: 1px solid #6b6a6b;
+  border-right: 1px solid #D5D3D5;
 }
 
 .buttons a {
-  padding: 16px 15px;
   font-size: 12px;
-  text-decoration: none;
+  font-weight: 500;
   color: #6b6a6b;
+  padding: 14px 12px;
 }
 
 .buttons:last-child {
   border-right: none;
 }
 
-.buttons a:last-child  {
-  padding: 16px 35px;
+.buttons:last-child a  {
+  padding: 14px 70px;
 }
 
-.buttons a i {
+.buttons a i,
+.nav-button a i {
   padding: 0 5px;
 }
 
 .buttons a:hover {
   color: #2a2f33;
   background-color: #fafafa;
+}
+
+/* main header */
+
+.main-header {
+  width: 100%;
+  height: 70%;
+  border-bottom: 1px solid #D5D3D5;
+}
+
+.main-header-nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.right-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-button {
+  padding: 44px 0;
+  margin: 0 15px;
+}
+
+.nav-button:hover {
+  border-top: 4px solid #427ed5;
+}
+
+.nav-button a {
+  padding: 25px 3px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b6a6b;
+}
+
+.right-nav .blue-button {
+  margin: 0 10px;
+}
+
+.search-button {
+  padding: 0;
+  margin: 0;
+  color: #6b6a6b;
 }
