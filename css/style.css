@@ -32,23 +32,32 @@ a {
   color: #ffffff;
 }
 
-.big-transparent-button {
+.big-transparent-button, .transparent-button{
   border: 2px solid #ffffff;
-  padding: 18px 38px;
-  border-radius: 25px;
-  font-size: 16px;
-  font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
   background-color: rgba(255,255,255,0.1);
   letter-spacing: 1px;
 }
 
+.big-transparent-button {
+  padding: 18px 38px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.transparent-button {
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
 .header-top, .main-header, .header-top-nav,
 .black-icons, .right-menu, .buttons,
 .main-header-nav, .logo, .right-nav,
 .jumbo-info, .title, .title-info,
-.category-buttons, .section, .cards {
+.category-buttons, .section, .cards,.winter-collection, .spring-collection, .autumn-collection {
   display: flex;
 }
 
@@ -212,7 +221,8 @@ a {
 }
 
 .jumbo-info h1,
-.jumbo-info h2 {
+.jumbo-info h2,
+.section h2 {
   color: #ffffff;
 }
 
@@ -297,6 +307,7 @@ a {
 .card {
   width: 270px;
   margin-right: 10px;
+  margin-bottom: 200px;
 }
 
 .card:last-child {
@@ -332,4 +343,49 @@ a {
   font-size: 14px;
   text-decoration: line-through;
   margin-right: 5px;
+}
+
+/* collections */
+
+.winter-collection, .spring-collection, .autumn-collection {
+  width: calc(100% / 3);
+  height: 600px;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.winter-collection a,
+.spring-collection a,
+.autumn-collection a {
+  margin-bottom: 60px;
+}
+
+.winter-collection {
+  background-image: url('../images/winter_collection_bg.jpg');
+}
+
+.spring-collection {
+  background-image: url('../images/spring_collection_bg.jpg');
+}
+
+.autumn-collection {
+  background-image: url('../images/autumn_collection_bg.jpg');
+}
+
+.section h2, .section h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 35px;
+}
+
+.section h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 16px;
 }
