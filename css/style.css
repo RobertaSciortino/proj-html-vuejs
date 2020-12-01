@@ -592,10 +592,42 @@ a.blue-button:hover {
  /* new arrivals carousel */
 .new-arrivals-carousel {
   width: 100%;
-  position: absolute;
-  margin: 70px 0 100px 0;
+  height: 500px;
+  position: relative;
+  margin: 70px 0 150px 0;
 }
 
 .new-arrivals-carousel img {
   width: calc(100% / 5);
+}
+
+/* testimonial section */
+.testimonial-section {
+  height: 550px;
+  background-image: url('../images/testimonials_home_1_bg.jpg');
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-section .container {
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 150px;
+}
+
+.testimonial-section img {
+  margin-bottom: 50px;
+}
+
+.testimonial-section p {
+  color: #ffffff;
+  margin-bottom: 50px;
+  line-height: 2em;
+  text-align: center;
+}
+
+.testimonial-section p span {
+  font-weight: 700;
 }
