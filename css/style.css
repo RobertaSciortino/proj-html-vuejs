@@ -57,7 +57,7 @@ a {
 .black-icons, .right-menu, .buttons,
 .main-header-nav, .logo, .right-nav,
 .jumbo-info, .title, .title-info,
-.category-buttons, .section, .cards,.winter-collection, .spring-collection, .autumn-collection {
+.category-buttons, .section, .cards, .collections-section, .winter-collection, .spring-collection, .autumn-collection {
   display: flex;
 }
 
@@ -221,8 +221,7 @@ a {
 }
 
 .jumbo-info h1,
-.jumbo-info h2,
-.section h2 {
+.jumbo-info h2 {
   color: #ffffff;
 }
 
@@ -374,16 +373,16 @@ a {
   background-image: url('../images/autumn_collection_bg.jpg');
 }
 
-.section h2, .section h3 {
+.collections-section h2, .collections-section h3 {
   color: #ffffff;
   margin-bottom: 20px;
 }
 
-.section h2 {
+.collections-section h2 {
   font-size: 35px;
 }
 
-.section h3 {
+.collections-section h3 {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
