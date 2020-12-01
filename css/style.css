@@ -58,7 +58,7 @@ a {
 .main-header-nav, .logo, .right-nav,
 .jumbo-info, .title, .title-info,
 .category-buttons, .section, .cards, .collections-section, .winter-collection, .spring-collection, .autumn-collection, .best-seller-section,
-.best-seller-carousel {
+.best-seller-carousel, .offers-section, .offers, .promo, .free-shipping {
   display: flex;
 }
 
@@ -424,4 +424,55 @@ a {
 
 .right {
   right: 0;
+}
+
+/* offers section  */
+.offers-section {
+  width: 100%;
+  height: 550px;
+  background-image: url('../images/bkgd_confetti-compressor.jpg');
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers {
+  width: 100%;
+  height: 350px;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.promo, .free-shipping {
+  width: 560px;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 100px 50px;
+}
+
+.promo {
+  background-image: url('../images/promo_box_1_bg.jpg');
+}
+
+.free-shipping {
+  background-image: url('../images/promo_box_2_bg.jpg');
+}
+
+.offers h2, .offers p {
+  margin-bottom: 15px;
+}
+
+.offers h2 {
+  font-size: 35px;
+}
+
+.offers p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2em;
 }
