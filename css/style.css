@@ -53,16 +53,8 @@ a {
   padding: 10px 20px;
 }
 
-.header-top, .main-header, .header-top-nav,
-.black-icons, .right-menu, .buttons,
-.main-header-nav, .logo, .right-nav,
-.jumbo-info, .title, .title-info,
-.category-buttons, .section, .cards,
-.collections-section, .winter-collection,
-.spring-collection, .autumn-collection,
-.best-seller-section, .best-seller-carousel,
-.offers-section, .offers, .promo, .free-shipping,
-.action {
+
+.display-flex {
   display: flex;
 }
 
