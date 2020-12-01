@@ -197,6 +197,12 @@ a {
   color: #6b6a6b;
 }
 
+/* hover blue button */
+
+a.blue-button:hover {
+  opacity: 0.9;
+}
+
 /* jumbotron */
 
 .jumbotron {
