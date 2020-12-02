@@ -1,6 +1,12 @@
 var app = new Vue ({
   el: '#root',
   data: {
+    blackIcons: [
+      'fab fa-facebook-f',
+      'fab fa-twitter',
+      'fab fa-instagram',
+      'fab fa-youtube'
+    ],
     headerTop: [
       {
         cartVisible: false,

@@ -17,17 +17,8 @@
         <div class="container">
           <div class="header-top-nav display-flex">
             <div class="black-icons display-flex">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-youtube"></i>
+              <a href="#" v-for="icon in blackIcons">
+                <i :class="icon"></i>
               </a>
             </div>
 
