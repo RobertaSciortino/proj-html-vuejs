@@ -801,13 +801,18 @@ a.blue-button:hover {
 
 .main-footer .sections {
   height: 100%;
-  align-items: center;
+  margin-top: 60px;
+  align-items: baseline;
+}
+
+.contacts, .top-rated {
+  width: calc(100% / 4);
 }
 
 .contacts {
-  width: calc(100% / 4);
   line-height: 2em;
   font-size: 14px;
+  align-self: flex-start;
 }
 
 .contacts p:first-of-type {
@@ -845,7 +850,8 @@ a.blue-button:hover {
 }
 
 .recent-posts {
-  padding: 0 30px;
+  width: calc(100% / 4 + 30px);
+  padding: 0 0 0 30px;
 }
 
 .recent-posts li:first-child {
@@ -860,11 +866,20 @@ a.blue-button:hover {
   font-size: 14px;
 }
 
+.tags {
+  width: calc(100% / 4 - 60px);
+  margin-left: 30px;
+}
+
 .tags a {
   font-size: 12px;
   padding: 5px;
-  margin-right: 5px;
+  margin: 0 5px 5px 0;
   border: 1px solid #64686c;
+}
+
+.all-tags {
+  flex-wrap: wrap;
 }
 
 .footer-bottom {
