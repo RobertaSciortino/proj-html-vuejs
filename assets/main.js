@@ -1,6 +1,32 @@
 var app = new Vue ({
   el: '#root',
   data: {
+    mainHeaderNav: [
+      {
+        name: 'Home',
+        dropMenuIconVisible: true
+      },
+      {
+        name:'Shop',
+        dropMenuIconVisible: true
+      },
+      {
+        name: 'Products',
+        dropMenuIconVisible: true
+      },
+      {
+        name: 'Categories',
+        dropMenuIconVisible: true
+      },
+      {
+        name: 'News',
+        dropMenuIconVisible: false
+      },
+      {
+        name: 'Elements',
+        dropMenuIconVisible: true
+      }
+    ],
     recentPosts: [
       'Aenean lobortis sapien enim viverra',
       'Duis ac massa semper maximus',

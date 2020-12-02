@@ -64,39 +64,10 @@
               </a>
             </div>
             <div class="right-nav display-flex">
-              <div class="nav-button" v-for="dropMenu in mainHeaderNav">
+              <div class="nav-button" v-for="dropIcon in mainHeaderNav">
                 <a href="#">
-                  Home
-                  <i class="fas fa-angle-down"></i>
-                </a>
-              </div>
-              <div class="nav-button">
-                <a href="#">
-                  Shop
-                  <i class="fas fa-angle-down"></i>
-                </a>
-              </div>
-              <div class="nav-button">
-                <a href="#">
-                  Products
-                  <i class="fas fa-angle-down"></i>
-                </a>
-              </div>
-              <div class="nav-button">
-                <a href="#">
-                  Categories
-                  <i class="fas fa-angle-down"></i>
-                </a>
-              </div>
-              <div class="nav-button">
-                <a href="#">
-                  News
-                </a>
-              </div>
-              <div class="nav-button">
-                <a href="#">
-                  Elements
-                  <i class="fas fa-angle-down"></i>
+                  {{dropIcon.name}}
+                  <i class="fas fa-angle-down" v-if="dropIcon.dropMenuIconVisible"></i>
                 </a>
               </div>
               <div class="shop-button">
