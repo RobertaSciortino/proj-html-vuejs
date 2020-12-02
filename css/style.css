@@ -635,11 +635,16 @@ a.blue-button:hover {
 /* blog section */
 .blog  {
   justify-content: center;
+  border-bottom: 1px solid #D5D3D5;
+}
+
+.blog .cards {
+  margin-bottom: 120px;
 }
 
 .blog-card {
   width: 360px;
-  margin-top: 50px; 
+  margin-top: 50px;
 }
 
 .blog-card img {
