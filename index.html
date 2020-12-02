@@ -796,11 +796,7 @@
                     <div class="review-details">
                       <p>{{product.name}}</p>
                       <p class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star" v-for="star in stars"></i>
                       </p>
                       <span class="old-price" v-if="product.oldPriceVisible">
                         {{product.oldPrice}}

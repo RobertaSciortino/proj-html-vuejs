@@ -76,6 +76,7 @@ var app = new Vue ({
         image: 'spring_printed_dress-120x156.jpg'
       }
     ],
+    stars: 5,
     recentPosts: [
       'Aenean lobortis sapien enim viverra',
       'Duis ac massa semper maximus',
