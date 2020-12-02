@@ -660,3 +660,60 @@ a.blue-button:hover {
   font-size: 14px;
   line-height: 2em;
 }
+
+/* reviews section */
+.reviews {
+  justify-content: center;
+  margin: 70px 0;
+}
+
+.reviews .sections {
+  justify-content: space-between;
+}
+
+.reviews .sections h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.reviews ul {
+  width: 250px;
+}
+
+.reviews li {
+  border-bottom: 1px solid #D5D3D5;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.review-details {
+  width: 180px;
+  color: #2a2f33;
+  font-size: 14px;
+}
+
+.review-details .new-price,
+.review-details .old-price {
+  color: #2f3034;
+  font-weight: 500;
+}
+
+.review-details p {
+  margin-bottom: 10px;
+}
+
+.review-details .stars {
+  color: #427ed5;
+  font-size: 14px;
+}
+
+.image-review {
+  width: 60px;
+}
+
+.image-review img {
+  width: 100%;
+}
