@@ -791,54 +791,28 @@
                 <h3>
                   top rated products
                 </h3>
-                <li class="display-flex">
-                  <div class="review-details">
-                    <p>Black Leather Jacket</p>
-                    <p class="stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </p>
-                    <span class="old-price">$235</span>
-                    <span class="new-price">$200</span>
-                  </div>
-                  <div class="image-review">
-                    <img src="images/black_elegant_leather_jacket-120x156.jpg" alt="">
-                  </div>
-                </li>
-                <li class="display-flex">
-                  <div class="review-details">
-                    <p>Leather Gloves</p>
-                    <p class="stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </p>
-                    <p class="new-price">$45</p>
-                  </div>
-                  <div class="image-review">
-                    <img src="images/leather_gloves-120x156.jpg" alt="">
-                  </div>
-                </li>
-                <li class="display-flex">
-                  <div class="review-details">
-                    <p>Spring Dress</p>
-                    <p class="stars">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </p>
-                    <p class="new-price">$47</p>
-                  </div>
-                  <div class="image-review">
-                    <img src="images/spring_printed_dress-120x156.jpg" alt="">
-                  </div>
+                <li v-for="product in topRatedProducts">
+                  <a href="#" class="display-flex">
+                    <div class="review-details">
+                      <p>{{product.name}}</p>
+                      <p class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </p>
+                      <span class="old-price" v-if="product.oldPriceVisible">
+                        {{product.oldPrice}}
+                      </span>
+                      <span class="new-price">
+                        {{product.newPrice}}
+                      </span>
+                    </div>
+                    <div class="image-review">
+                      <img :src="'images/' + product.image" alt="product.name">
+                    </div>
+                  </a>
                 </li>
               </ul>
             </div>

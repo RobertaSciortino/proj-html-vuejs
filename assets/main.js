@@ -53,6 +53,29 @@ var app = new Vue ({
         dropMenuIconVisible: true
       }
     ],
+    topRatedProducts: [
+      {
+        name: 'Black Leather Jacket',
+        oldPriceVisible: true,
+        oldPrice: '$235',
+        newPrice: '$200',
+        image: 'black_elegant_leather_jacket-120x156.jpg'
+      },
+      {
+        name: 'Leather Gloves',
+        oldPriceVisible: false,
+        oldPrice: '',
+        newPrice: '$45',
+        image: 'leather_gloves-120x156.jpg'
+      },
+      {
+        name: 'Spring Dress',
+        oldPriceVisible: false,
+        oldPrice: '',
+        newPrice: '$47',
+        image: 'spring_printed_dress-120x156.jpg'
+      }
+    ],
     recentPosts: [
       'Aenean lobortis sapien enim viverra',
       'Duis ac massa semper maximus',

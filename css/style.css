@@ -820,7 +820,8 @@ a.blue-button:hover {
 }
 
 .main-footer, .main-footer a,
-.main-footer p, .main-footer span, .main-footer h3, .copyright a {
+.main-footer p, .main-footer span, .main-footer h3,
+.copyright a, .top-rated .review-details span{
   color: #EAEAEA;
 }
 
