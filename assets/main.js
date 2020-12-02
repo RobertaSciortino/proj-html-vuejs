@@ -1,6 +1,26 @@
 var app = new Vue ({
   el: '#root',
   data: {
+    headerTop: [
+      {
+        cartVisible: false,
+        name: 'Shopping cart',
+        iconVisible: false,
+        classIcon: 'fas fa-angle-down'
+      },
+      {
+        cartVisible: false,
+        name:'My Account',
+        iconVisible: true,
+        classIcon: 'fas fa-angle-down'
+      },
+      {
+        cartVisible: true,
+        name: 'CART',
+        iconVisible: true,
+        classIcon: 'fas fa-chevron-down'
+      }
+    ],
     mainHeaderNav: [
       {
         name: 'Home',

@@ -32,22 +32,11 @@
             </div>
 
             <div class="right-menu display-flex">
-              <div class="buttons display-flex">
+              <div class="buttons display-flex" v-for="button in headerTop">
                 <a href="#">
-                  Shopping cart
-                </a>
-              </div>
-              <div class="buttons display-flex">
-                <a href="#">
-                  My Account
-                  <i class="fas fa-angle-down"></i>
-                </a>
-              </div>
-              <div class="buttons display-flex">
-                <a href="#">
-                  <i class="fas fa-shopping-cart"></i>
-                  CART
-                  <i class="fas fa-chevron-down"></i>
+                  <i class="fas fa-shopping-cart" v-if="button.cartVisible"></i>
+                  {{button.name}}
+                  <i :class="button.classIcon" v-if="button.iconVisible"></i>
                 </a>
               </div>
             </div>
