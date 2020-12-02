@@ -36,6 +36,11 @@ ul {
   color: #ffffff;
 }
 
+/* hover blue button */
+a.blue-button:hover {
+  opacity: 0.9;
+}
+
 .big-transparent-button, .transparent-button{
   border: 2px solid #ffffff;
   color: #ffffff;
@@ -50,6 +55,11 @@ ul {
   font-size: 16px;
   font-weight: 700;
 }
+
+ a.big-transparent-button:hover,
+ a.transparent-button:hover {
+   background-color: rgba(255,255,255,0.5);
+ }
 
 .transparent-button {
   font-size: 14px;
@@ -197,11 +207,6 @@ ul {
   color: #6b6a6b;
 }
 
-/* hover blue button */
-
-a.blue-button:hover {
-  opacity: 0.9;
-}
 
 /* jumbotron */
 
