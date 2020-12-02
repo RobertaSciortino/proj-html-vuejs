@@ -631,3 +631,27 @@ a.blue-button:hover {
 .testimonial-section p span {
   font-weight: 700;
 }
+
+/* blog section */
+.blog  {
+  justify-content: center;
+}
+
+.blog-card {
+  width: 360px;
+  margin-top: 50px; 
+}
+
+.blog-card img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.blog-card h4 {
+  margin-bottom: 10px;
+}
+
+.blog-card .post {
+  font-size: 14px;
+  line-height: 2em;
+}
