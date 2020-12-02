@@ -17,7 +17,7 @@
         <div class="container">
           <div class="header-top-nav display-flex">
             <div class="black-icons display-flex">
-              <a href="#" v-for="icon in blackIcons">
+              <a href="#" v-for="icon in icons">
                 <i :class="icon"></i>
               </a>
             </div>
@@ -781,17 +781,8 @@
                 Web: Theme-fusion.com
               </p>
               <p>
-                <a href="#">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-youtube"></i>
+                <a href="#" v-for="icon in icons">
+                  <i :class="icon"></i>
                 </a>
               </p>
             </div>

@@ -1,7 +1,7 @@
 var app = new Vue ({
   el: '#root',
   data: {
-    blackIcons: [
+    icons: [
       'fab fa-facebook-f',
       'fab fa-twitter',
       'fab fa-instagram',
