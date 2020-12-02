@@ -815,7 +815,7 @@ a.blue-button:hover {
 }
 
 .main-footer, .main-footer a,
-.main-footer p, .main-footer span, .main-footer h3 {
+.main-footer p, .main-footer span, .main-footer h3, .copyright a {
   color: #EAEAEA;
 }
 
@@ -865,4 +865,25 @@ a.blue-button:hover {
   padding: 5px;
   margin-right: 5px;
   border: 1px solid #64686c;
+}
+
+.footer-bottom {
+  background-color: #1D1F22;
+  height: 150px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  margin-bottom: 20px;
+}
+
+.copyright a {
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.copyright a:not(:last-child) {
+  border-right: 1px solid #EAEAEA;
 }
