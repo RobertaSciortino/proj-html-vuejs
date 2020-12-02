@@ -845,17 +845,8 @@
       </div>
       <div class="footer-bottom display-flex">
         <div class="copyright">
-          <a href="">
-            &copy;Copyright 2012-2020
-          </a>
-          <a href="">
-            Avada Theme by Theme Fusion
-          </a>
-          <a href="">
-            All Rights Reserved
-          </a>
-          <a href="">
-            Powered By Wordpress
+          <a href="" v-for="item in copyright">
+            {{item}}
           </a>
         </div>
         <div class="payment-cards">
