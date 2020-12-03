@@ -196,11 +196,11 @@ a.blue-button:hover {
   color: #427ed5;
 }
 
-.right-nav .shop-button {
+.shop-search-section a:first-child {
   margin: 0 10px;
 }
 
-.search-button {
+.shop-search-section a:last-child {
   padding: 0;
   margin: 0;
   color: #6b6a6b;

@@ -43,18 +43,16 @@
               </a>
             </div>
             <div class="right-nav display-flex">
-              <div class="nav-button" v-for="dropIcon in mainHeaderNav">
+              <div class="nav-button" v-for="section in mainHeaderNav">
                 <a href="#">
-                  {{dropIcon.name}}
-                  <i class="fas fa-angle-down" v-if="dropIcon.dropMenuIconVisible"></i>
+                  {{section.name}}
+                  <i class="fas fa-angle-down" v-if="section.dropMenuIconVisible"></i>
                 </a>
               </div>
-              <div class="shop-button">
+              <div class="shop-search-section">
                 <a href="#" class="blue-button">
                   shop now!
                 </a>
-              </div>
-              <div class="search-button">
                 <a href="#">
                   <i class="fas fa-search"></i>
                 </a>
