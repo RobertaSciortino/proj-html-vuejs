@@ -21,7 +21,6 @@
                 <i :class="icon"></i>
               </a>
             </div>
-
             <div class="right-menu display-flex">
               <div class="buttons display-flex" v-for="button in headerTop">
                 <a href="#">
@@ -108,7 +107,7 @@
         </div>
       </div>
 
-      <!-- title section -->
+      <!-- title section (reusable)-->
       <div class="section display-flex">
         <div class="container">
           <div class="title display-flex">
@@ -816,7 +815,7 @@
                     <div class="review-details">
                       <p>{{product.name}}</p>
                       <p class="stars">
-                        <i class="fas fa-star" v-for="star in stars"></i>
+                        <i class="fas fa-star" v-for="star in product.stars"></i>
                       </p>
                       <span class="old-price" v-if="product.oldPriceVisible">
                         {{product.oldPrice}}

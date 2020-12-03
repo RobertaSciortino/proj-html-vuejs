@@ -1,12 +1,14 @@
 var app = new Vue ({
   el: '#root',
   data: {
+    //dati comuni per header e footer
     icons: [
       'fab fa-facebook-f',
       'fab fa-twitter',
       'fab fa-instagram',
       'fab fa-youtube'
     ],
+    //header
     headerTop: [
       {
         cartVisible: false,
@@ -53,9 +55,11 @@ var app = new Vue ({
         dropMenuIconVisible: true
       }
     ],
+    //footer
     topRatedProducts: [
       {
         name: 'Black Leather Jacket',
+        stars: 5,
         oldPriceVisible: true,
         oldPrice: '$235',
         newPrice: '$200',
@@ -63,6 +67,7 @@ var app = new Vue ({
       },
       {
         name: 'Leather Gloves',
+        stars: 5,
         oldPriceVisible: false,
         oldPrice: '',
         newPrice: '$45',
@@ -70,13 +75,13 @@ var app = new Vue ({
       },
       {
         name: 'Spring Dress',
+        stars: 5,
         oldPriceVisible: false,
         oldPrice: '',
         newPrice: '$47',
         image: 'spring_printed_dress-120x156.jpg'
       }
     ],
-    stars: 5,
     recentPosts: [
       'Aenean lobortis sapien enim viverra',
       'Duis ac massa semper maximus',
